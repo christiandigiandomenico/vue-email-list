@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- vue -->
+    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+
+    <div id="app" class="container py-5">
+        <h1>
+            Lista Mail
+        </h1>
+
+        <ul v-if="mails.length == 10">
+            <li v-for="mail in mails">{{mail.response}}</li>
+        </ul>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
